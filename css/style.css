@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html,
+body {
+    height: 100%;
+}
+
+@font-face{ 
+    src: url('/fonts/OpenSans-Light.ttf'); 
+    font-family: "Open Sans"; 
+}
+
+.center {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#logo{
+    width: 170px;
+    display: block;
+    margin: 0;
+    border: solid rgb(76, 0, 255) 2px;
+
+}
+.header{
+    border: solid green 2px;
+    width: 400px;
+    height: 100px;
+    display: block;
+    margin: -100px auto auto auto;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header ul li {
+    margin: 10px;
+}
+
+.header ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ff203e;
+    border-radius: 20px;
+}
+
+.header ul li a:hover {
+    background-color: #831d2b;
+    border-radius: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    position: relative;
+}
+
+.image {
+    border: solid green 2px;
+    top: -160px;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    background-image: url('../images/fundo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1; 
+
+}
+
+.form {
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    padding: 20px;
+    border: solid #ccc 8px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1; 
+    top: -100px;
+}
+
+.container > .center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form h2 {
+    font-weight: normal;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+.input-container span {
+    display: inline-block;
+    width: 100%;
+    color: #000000;
+    font-size: 17px;
+}
+
+.form p {
+    margin: 10px 0;
+    display: inline-block;
+    width: 100%;
+    color: #000000;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.input-container input[type=text],
+.input-container input[type=email],
+.input-container input[type=tel] {
+    margin-top: 8px;
+    width: 100%;
+    height: 55px;
+    border: solid #000000 1px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.form input[type=submit] {
+    color: white;
+    width: 100%;
+    height: 56px;
+    background-color: #a01c2e;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;           
+    margin: 10px auto 0 auto;      
+    font-size: 17px;
+}
+
+input[type="submit"]:hover {
+    background-color: #57101a;
+}
+
+.warning {
+    font-weight: bold;
+}
+
+#successMessage {
+    color: green;
+    font-weight: bold;
+}
