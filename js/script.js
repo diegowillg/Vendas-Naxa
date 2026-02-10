@@ -1,5 +1,6 @@
+// exibir mensagem de sucesso após envio do formulário
 function showSuccessMessage(event) {
-    event.preventDefault();
     document.getElementById("successMessage").style.display = "block";
-        document.getElementById("formulario").reset();
+    document.getElementById("formulario").reset();
 }
+
